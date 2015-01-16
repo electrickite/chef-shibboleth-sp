@@ -10,7 +10,7 @@ recipe            "shibboleth-sp::simple", "Base recipe and simple attribute-dri
 recipe            "shibboleth-sp::sp_cert_key", "Recipe to configure sp cert and key using databags or node attributes."
 depends           "yum", ">= 3.0.0"
 
-%w{ apache2 windows }.each do |d|
+%w{ windows }.each do |d|
   depends d
 end
 
